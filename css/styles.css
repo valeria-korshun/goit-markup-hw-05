@@ -474,3 +474,13 @@ address {
 .socials-icon {
 }
 /* #endregion footer */
+/* #region backdrop */
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.7);
+}
+/* #endregion backdrop */
