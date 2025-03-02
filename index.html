@@ -451,12 +451,113 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscribe-block">
+          <p class="footer-title">Subscribe</p>
+          <form class="footer-form">
+            <div class="footer-input-cont">
+              <label class="footer-label visually-hidden" for="subscribe">label</label>
+              <input
+                class="footer-input"
+                type="email"
+                name="user-email"
+                id="subscribe"
+                placeholder="E-Mail"
+              />
+            </div>
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #region backdrop -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-btn" type="button"></button>
+        <button class="close-btn" type="button">
+          <svg class="close-icon" height="8" width="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-container-block">
+            <label class="label" for="user-text">Name</label>
+            <div class="modal-form-input-cont">
+              <input
+                class="modal-form-input"
+                name="user-text"
+                type="text"
+                required
+                id="user-text"
+              />
+              <svg class="modal-form-icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container-block">
+            <label class="label" for="user-phone">Phone</label>
+            <div class="modal-form-input-cont">
+              <input
+                class="modal-form-input"
+                name="user-phone"
+                type="tel"
+                required
+                id="user-phone"
+              />
+              <svg class="modal-form-icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-container-block">
+            <label class="label" for="user-email">Email</label>
+            <div class="modal-form-input-cont">
+              <input
+                class="modal-form-input"
+                name="user-email"
+                type="email"
+                required
+                id="user-email"
+              />
+              <svg class="modal-form-icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-container-block">
+            <label class="label" for="user-comment">Comment</label>
+            <div class="modal-form-input-cont">
+              <textarea
+                class="user-comment"
+                name="user-comment"
+                required
+                id="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="modal-form-con-checkbox">
+            <input class="checkbox visually-hidden" id="user-checkbox" type="checkbox" required />
+            <label class="checkbox-label" for="user-checkbox">
+              <span class="custom-checkbox">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <!-- #endregion backdrop -->
